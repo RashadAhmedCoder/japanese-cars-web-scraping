@@ -1,0 +1,45 @@
+.category{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: -15px;
+}
+
+.category:hover{
+    text-align: center;
+    background-color: black;
+    color: red;
+}
+
+li{
+    border: 2px solid;
+    list-style: none;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+li:hover{
+    border: 2px solid;
+    list-style: none;
+    color: red;
+}
+
+body{
+    background-color: #CD0101;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+ul{
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+
+h1, h2, p{
+    color: white;
+}
+
+
+

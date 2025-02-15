@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Japanese Cars</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Japanese Cars Models</h1>
+<h2>By Rashad Ahmed</h2>
+<p>Did you know that Toyota and Honda collectively made up of approximately a whopping 23% of all cars sold in the United States in 2024? Before the car search even starts, many customers are already decided that their next car is going to be from one of those two powerhouse Japanese brands known for their reliability.</p>
+<p>Through the power of web scraping, this site reduces the hassle of your car search by displaying every model the two brands have all in one site.</p>
+<h1>Honda</h1>
+<ul>
+    <li class="category">Year</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+    <li>2025</li>
+</ul>
+<ul id="honda_names">
+    <li class="category">Model Name</li>
+    {% for honda_name in honda_all_names %}
+        <li>{{ honda_name }}</li>
+    {% endfor %}
+</ul>
+<ul>
+    <li class="category">MSRP</li>
+    {% for honda_msrp in honda_all_msrps %}
+        <li>{{ honda_msrp }}</li>
+    {% endfor %}
+</ul>
+<br>
+<h1>Toyota</h1>
+
+<ul>
+    <li class="category">Year</li>
+    {% for toyota_year in toyota_all_years %}
+        <li>{{ toyota_year }}</li>
+    {% endfor %}
+</ul>
+
+<ul>
+    <li class="category">Model Name</li>
+    {% for toyota_name in toyota_all_names %}
+        <li>{{ toyota_name }}</li>
+    {% endfor %}
+</ul>
+
+<ul>
+    <li class="category">MSRP</li>
+    {% for toyota_msrp in toyota_all_msrps %}
+        <li>{{ toyota_msrp }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
