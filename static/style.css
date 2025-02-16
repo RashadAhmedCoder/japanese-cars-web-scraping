@@ -41,5 +41,34 @@ h1, h2, p{
     color: white;
 }
 
+#highlanderpic{
+    width: 120px;
+    height: 170px;
+    max-width: 200px;
+    margin-left: 300px;
+    margin-top: -170px;
+}
+
+#civicpic{
+    width: 130px;
+    height: 180px;
+    margin-right: 300px;
+}
+
+
+@media (max-width: 768px) {
+    #highlanderpic, #civicpic {
+        width: 80%;
+        max-width: 150px;
+}
+}
+
+@media (max-width: 480px) {
+    #highlanderpic, #civicpic {
+        width: 100%;
+        max-width: 120px;
+    }
+}
+
 
 
